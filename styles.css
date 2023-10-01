@@ -1,5 +1,10 @@
 /* General */
 
+@font-face {
+  font-family: norseBold;
+  src: url(Norse-Bold.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,13 +23,57 @@ body {
 .section-1 {
   flex: 2;
   background-color: beige;
+
+  position: relative;
 }
 
-img {
+.bg-image {
   width:100%;
   height:100%;
   object-fit: cover;
   overflow: hidden;
+}
+
+.village-banner {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  position: absolute;
+  top: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.village-icon {
+  width: 80px;
+}
+
+.village-text {
+  font-family: norseBold;
+  font-size: 4rem;
+  color: white;
+
+  margin-top: 12px;
+}
+
+.bg-image-source {
+  width: 100%;
+  text-align: center;
+  color: rgb(160, 160, 160);
+  padding: 8px;
+  font-size: 14px;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.bg-image-source a {
+  color: rgb(160, 160, 160);
+  text-decoration: underline;
 }
 
 /* Section 2 */
